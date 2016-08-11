@@ -34,7 +34,7 @@ class Generator extends \yii\gii\Generator
     public $modelClass;
     public $controllerClass;
     public $viewPath = '@app/modules';
-    public $baseControllerClass = 'yii\web\Controller';
+    public $baseControllerClass = 'rocketfirm\engine\RFAController';
     public $indexWidgetType = 'grid';
     public $searchModelClass = '';
 

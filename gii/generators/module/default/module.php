@@ -16,7 +16,7 @@ echo "<?php\n";
 
 namespace <?= $ns ?>;
 
-use app\components\rocket\RFModule;
+use rocketfirm\engine\rocket\RFModule;
 
 class <?= $className ?> extends RFModule
 {
