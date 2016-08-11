@@ -1,0 +1,16 @@
+{
+    "name": "rocketfirm/engine",
+    "description": "Set of components and libraries, that powers up RocketFirm websites",
+    "type": "library",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "janisto/yii2-environment": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "naffiq",
+            "email": "galymzhan@rocketfirm.com"
+        }
+    ]
+}
