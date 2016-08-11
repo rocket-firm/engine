@@ -6,7 +6,7 @@
  * Time: 18:14
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
 
 use app\modules\languages\models\Languages;

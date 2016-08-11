@@ -6,7 +6,7 @@
  * Time: 11:27 AM
  */
 
-namespace app\components\admin;
+namespace rocketfirm\engine\admin;
 
 use dosamigos\grid\ToggleColumn;
 

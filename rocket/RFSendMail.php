@@ -6,9 +6,9 @@
  * Time: 14:50
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
-use app\modules\config\models\Config;
+use rocketfirm\engine\modules\config\models\Config;
 use yii\base\Behavior;
 use yii\base\Component;
 

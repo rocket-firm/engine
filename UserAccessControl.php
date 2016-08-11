@@ -6,7 +6,7 @@
  * Time: 14:54
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 
 class UserAccessControl

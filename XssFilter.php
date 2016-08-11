@@ -16,7 +16,7 @@
  *   'actions' => 'admin,manage' - фильтровать только экшены admin и manage
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 use yii\base\Behavior;
 use yii\web\Controller;

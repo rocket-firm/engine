@@ -6,7 +6,7 @@
  * Time: 15:19
  */
 
-namespace app\components\grid;
+namespace rocketfirm\engine\grid;
 
 
 use yii\base\InvalidConfigException;

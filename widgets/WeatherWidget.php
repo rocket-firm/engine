@@ -6,10 +6,10 @@
  * Time: 2:40 PM
  */
 
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 
 
-use app\components\Weather;
+use rocketfirm\engine\Weather;
 use yii\base\Widget;
 
 class WeatherWidget extends Widget

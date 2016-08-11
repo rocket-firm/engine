@@ -6,11 +6,11 @@
  * Time: 17:27
  */
 
-namespace app\components\traits;
+namespace rocketfirm\engine\traits;
 
 
 // TODO: get rid of straight Language module dependency and use DI
-use app\modules\languages\models\Languages;
+use rocketfirm\engine\modules\languages\models\Languages;
 use yii\helpers\ArrayHelper;
 
 trait NestedSetTree

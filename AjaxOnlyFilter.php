@@ -6,7 +6,7 @@
  * Time: 11:54
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 
 use yii\base\Behavior;

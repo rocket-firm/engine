@@ -8,10 +8,10 @@
 
 namespace app\components;
 
-use app\assets\AppAsset;
-use app\components\rocket\RFSendMail;
-use app\modules\banners\models\Banners;
-use app\modules\config\models\Config;
+use rocketfirm\engine\assets\AppAsset;
+use rocketfirm\engine\rocket\RFSendMail;
+use rocketfirm\engine\modules\banners\models\Banners;
+use rocketfirm\engine\modules\config\models\Config;
 use yii\base\View;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;

@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\components\gii\generators\crud;
+namespace rocketfirm\engine\gii\generators\crud;
 
 use Yii;
 use yii\db\ActiveRecord;

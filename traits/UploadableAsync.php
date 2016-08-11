@@ -1,5 +1,5 @@
 <?php
-namespace app\components\traits;
+namespace rocketfirm\engine\traits;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\FileHelper;

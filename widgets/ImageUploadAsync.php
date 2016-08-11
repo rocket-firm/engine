@@ -1,8 +1,8 @@
 <?php
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 
-use app\components\ActiveRecord;
-use app\components\traits\UploadableAsync;
+use rocketfirm\engine\ActiveRecord;
+use rocketfirm\engine\traits\UploadableAsync;
 use yii\helpers\ArrayHelper;
 use yii\helpers\FileHelper;
 use yii\helpers\Url;

@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\components\gii\generators\module;
+namespace rocketfirm\engine\gii\generators\module;
 
 use yii\gii\CodeFile;
 use yii\helpers\Html;

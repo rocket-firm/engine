@@ -6,7 +6,7 @@
  * Time: 11:49 AM
  */
 
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 
 
 use dosamigos\datetimepicker\DateTimePicker;

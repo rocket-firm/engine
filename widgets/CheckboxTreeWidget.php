@@ -6,10 +6,10 @@
  * Time: 11:33 AM
  */
 
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 
 
-use app\modules\languages\models\Languages;
+use rocketfirm\engine\modules\languages\models\Languages;
 use yii\base\InvalidParamException;
 use yii\base\Widget;
 use yii\helpers\Html;

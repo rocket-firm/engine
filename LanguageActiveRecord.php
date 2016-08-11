@@ -6,10 +6,10 @@
  * Time: 12:24 PM
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 
-use app\modules\languages\models\Languages;
+use rocketfirm\engine\modules\languages\models\Languages;
 use yii\console\Application;
 
 class LanguageActiveRecord extends ActiveRecord

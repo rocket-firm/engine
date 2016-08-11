@@ -6,14 +6,14 @@
  * Time: 11:34
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
-use app\assets\AppAsset;
-use app\components\actions\CropImage;
-use app\components\actions\UploadAsync;
-use app\components\grid\AddMenuItemAction;
-use app\components\rocket\RFSendMail;
-use app\modules\config\models\Config;
+use rocketfirm\engine\assets\AppAsset;
+use rocketfirm\engine\actions\CropImage;
+use rocketfirm\engine\actions\UploadAsync;
+use rocketfirm\engine\grid\AddMenuItemAction;
+use rocketfirm\engine\rocket\RFSendMail;
+use rocketfirm\engine\config\models\Config;
 use dosamigos\grid\ToggleAction;
 use yii\base\Exception;
 use yii\filters\AccessControl;

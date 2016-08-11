@@ -1,5 +1,5 @@
 <?php
-namespace app\components;
+namespace rocketfirm\engine\rocket;
 
 class RFEnvironment extends \janisto\environment\Environment
 {

@@ -1,7 +1,7 @@
 <?php
-namespace app\components;
+namespace rocketfirm\engine;
 
-use app\components\ActiveRecord;
+use rocketfirm\engine\ActiveRecord;
 use Yii;
 use yii\helpers\ArrayHelper;
 

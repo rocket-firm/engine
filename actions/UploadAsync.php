@@ -1,9 +1,9 @@
 <?php
-namespace app\components\actions;
+namespace rocketfirm\engine\actions;
 
-use app\components\ActiveRecord;
-use app\components\traits\UploadableAsync;
-use app\components\Action;
+use rocketfirm\engine\ActiveRecord;
+use rocketfirm\engine\traits\UploadableAsync;
+use rocketfirm\engine\Action;
 use Yii;
 use yii\helpers\FileHelper;
 use yii\web\BadRequestHttpException;

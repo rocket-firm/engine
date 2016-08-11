@@ -6,7 +6,7 @@
  * Time: 17:17
  */
 
-namespace app\components\grid;
+namespace rocketfirm\engine\grid;
 
 
 use yii\grid\DataColumn;

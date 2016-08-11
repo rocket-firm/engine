@@ -6,7 +6,7 @@
  * Time: 11:43
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
 
 use yii\base\Module;

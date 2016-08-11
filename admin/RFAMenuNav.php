@@ -6,7 +6,7 @@
  * Time: 5:00 PM
  */
 
-namespace app\components\admin;
+namespace rocketfirm\engine\admin;
 
 use yii\base\InvalidConfigException;
 use yii\bootstrap\Nav;

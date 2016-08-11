@@ -1,7 +1,7 @@
 <?php
-namespace app\components\traits;
+namespace rocketfirm\engine\traits;
 
-use app\components\ActiveRecord;
+use rocketfirm\engine\ActiveRecord;
 use yii\helpers\FileHelper;
 use yii\web\UploadedFile;
 

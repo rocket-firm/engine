@@ -1,5 +1,5 @@
 <?php
-namespace app\components;
+namespace rocketfirm\engine;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;

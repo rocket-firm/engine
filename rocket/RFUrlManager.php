@@ -6,10 +6,10 @@
  * Time: 15:46
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
 
-use app\modules\languages\models\Languages;
+use rocketfirm\engine\modules\languages\models\Languages;
 use yii\helpers\Url;
 use yii\web\UrlManager;
 

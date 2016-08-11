@@ -6,7 +6,7 @@
  * Time: 12:14 PM
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
 
 use yii\behaviors\SluggableBehavior;

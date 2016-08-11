@@ -1,8 +1,8 @@
 <?php
-namespace app\components\behaviors;
+namespace rocketfirm\engine\behaviors;
 
-use app\components\ActiveRecord;
-use app\components\traits\UploadableAsync;
+use rocketfirm\engine\ActiveRecord;
+use rocketfirm\engine\traits\UploadableAsync;
 use yii\base\Behavior;
 use yii\helpers\ArrayHelper;
 use yii\validators\StringValidator;

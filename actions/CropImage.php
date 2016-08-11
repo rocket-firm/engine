@@ -1,7 +1,7 @@
 <?php
-namespace app\components\actions;
+namespace rocketfirm\engine\actions;
 
-use app\components\Action;
+use rocketfirm\engine\Action;
 use Yii;
 use yii\helpers\FileHelper;
 use yii\imagine\Image;

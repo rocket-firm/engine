@@ -1,14 +1,14 @@
 <?php
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 
-use app\components\ActiveRecord;
-use app\components\behaviors\WithMetaTags;
-use app\components\traits\UploadableAsync;
+use rocketfirm\engine\ActiveRecord;
+use rocketfirm\engine\behaviors\WithMetaTags;
+use rocketfirm\engine\traits\UploadableAsync;
 
 class MetaTagFields extends \yii\base\Widget
 {
     /**
-     * @var \app\components\behaviors\WithMetaTags|ActiveRecord|UploadableAsync
+     * @var \rocketfirm\engine\behaviors\WithMetaTags|ActiveRecord|UploadableAsync
      */
     public $model;
 

@@ -6,7 +6,7 @@
  * Time: 3:48 PM
  */
 
-namespace app\components\rocket;
+namespace rocketfirm\engine\rocket;
 
 
 use dosamigos\taggable\Taggable;

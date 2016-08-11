@@ -6,7 +6,7 @@
  * Time: 5:38 PM
  */
 
-namespace app\components\admin;
+namespace rocketfirm\engine\admin;
 
 
 use yii\grid\GridView;

@@ -1,5 +1,5 @@
 <?php
-namespace app\components\widgets;
+namespace rocketfirm\engine\widgets;
 use yii\widgets\ActiveForm;
 use yii\widgets\InputWidget;
 

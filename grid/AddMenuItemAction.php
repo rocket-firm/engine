@@ -6,11 +6,11 @@
  * Time: 15:44
  */
 
-namespace app\components\grid;
+namespace rocketfirm\engine\grid;
 
 
-use app\components\Action;
-use app\modules\menu\models\MenuItems;
+use rocketfirm\engine\Action;
+use rocketfirm\engine\modules\menu\models\MenuItems;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\BadRequestHttpException;

@@ -58,7 +58,7 @@
 // 47	isolated thundershowers местами ливни с грозой
 // 3200	not available
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 use yii\base\Component;
 use yii\base\Exception;

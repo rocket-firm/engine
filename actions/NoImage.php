@@ -6,10 +6,10 @@
  * Time: 4:00 PM
  */
 
-namespace app\components\actions;
+namespace rocketfirm\engine\actions;
 
 
-use app\components\Action;
+use rocketfirm\engine\Action;
 
 class NoImage extends Action
 {
