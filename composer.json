@@ -4,10 +4,10 @@
     "type": "library",
     "require": {
         "yiisoft/yii2": "^2.0",
+        "yiisoft/yii2-imagine": "~2.0.0",
         "janisto/yii2-environment": "*",
         "2amigos/yii2-grid-view-library" : "*",
         "2amigos/yii2-date-time-picker-widget" : "~1.0",
-        "yiisoft/yii2-imagine": "~2.0.0",
         "2amigos/yii2-selectize-widget": "~1.0.0",
         "creocoder/yii2-nested-sets": "~0.9.0",
         "2amigos/yii2-ckeditor-widget": "~1.0.0"
@@ -19,7 +19,40 @@
             "email": "galymzhan@rocketfirm.com"
         }
     ],
-    "PSR-4" : [
-        
-    ]
+    "autoload": {
+        "psr-4": {
+            "rocketfirm\\engine\\": "",
+            "rocketfirm\\engine\\actions\\": "actions",
+            "rocketfirm\\engine\\admin\\": "admin",
+            "rocketfirm\\engine\\assets\\": "assets",
+            "rocketfirm\\engine\\behaviors\\": "behaviors",
+            "rocketfirm\\engine\\gii\\generators\\module\\": "gii/generators/module",
+            "rocketfirm\\engine\\gii\\generators\\crud\\": "gii/generators/crud",
+            "rocketfirm\\engine\\grid\\": "grid",
+
+            "rocketfirm\\engine\\modules\\banners\\": "modules/banners",
+            "rocketfirm\\engine\\modules\\banners\\models\\": "modules/banners/models",
+            "rocketfirm\\engine\\modules\\banners\\admin\\controllers\\": "modules/banners/admin/controllers",
+            "rocketfirm\\engine\\modules\\banners\\front\\components\\": "modules/banners/front/components",
+
+            "rocketfirm\\engine\\modules\\config\\": "modules/config",
+            "rocketfirm\\engine\\modules\\config\\models\\": "modules/config/models",
+            "rocketfirm\\engine\\modules\\config\\admin\\controllers\\": "modules/config/admin/controllers",
+
+            "rocketfirm\\engine\\modules\\languages\\": "modules/languages",
+            "rocketfirm\\engine\\modules\\languages\\models\\": "modules/languages/models",
+            "rocketfirm\\engine\\modules\\languages\\admin\\components\\": "modules/languages/admin/components",
+            "rocketfirm\\engine\\modules\\languages\\admin\\controllers\\": "modules/languages/admin/controllers",
+            "rocketfirm\\engine\\modules\\languages\\front\\components\\": "modules/languages/front/components",
+
+            "rocketfirm\\engine\\modules\\menu\\": "modules/menu",
+            "rocketfirm\\engine\\modules\\menu\\models\\": "modules/menu/models",
+            "rocketfirm\\engine\\modules\\menu\\admin\\controllers\\": "modules/menu/admin/controllers",
+            "rocketfirm\\engine\\modules\\menu\\front\\components\\": "modules/languages/front/components",
+
+            "rocketfirm\\engine\\rocket\\": "rocket",
+            "rocketfirm\\engine\\traits\\": "traits",
+            "rocketfirm\\engine\\widgets\\": "widgets"
+        }
+    }
 }

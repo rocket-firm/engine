@@ -15,7 +15,7 @@ use yii\filters\VerbFilter;
 class DefaultController extends RFAController
 {
 
-    protected $_modelName = '\app\modules\banners\models\Banners';
+    protected $_modelName = '\rocketfirm\engine\modules\banners\models\Banners';
     public $allowedRoles = ['admin'];
 
     /**
