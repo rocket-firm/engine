@@ -6,7 +6,7 @@
  * Time: 11:34
  */
 
-namespace app\components;
+namespace rocketfirm\engine;
 
 use rocketfirm\engine\assets\AppAsset;
 use rocketfirm\engine\rocket\RFSendMail;
