@@ -12,3 +12,10 @@ Another way to install RocketEngine is to require this package from console
 ```
 composer require rocketfirm/engine
 ```
+
+## Running migrations
+
+Configure your database and run this package's migrations, before running your project's migrations
+```
+php yii migrate --migrationPath=@vendor/rocketfirm/engine/migrations
+```
