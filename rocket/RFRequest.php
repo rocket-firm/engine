@@ -9,7 +9,7 @@
 namespace rocketfirm\engine\rocket;
 
 
-use app\modules\languages\models\Languages;
+use rocketfirm\engine\modules\languages\models\Languages;
 use yii\web\Request;
 
 class RFRequest extends Request
