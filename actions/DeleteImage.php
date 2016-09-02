@@ -6,10 +6,10 @@
  * Time: 12:16 PM
  */
 
-namespace app\components\actions;
+namespace rocketfirm\engine\actions;
 
 
-use app\components\Action;
+use rocketfirm\engine\Action;
 use yii\web\NotFoundHttpException;
 
 class DeleteImage extends Action

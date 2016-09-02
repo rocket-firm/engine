@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\banners\models\BanersSearch */
+/* @var $model rocketfirm\engine\modules\banners\models\BanersSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

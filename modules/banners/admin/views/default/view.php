@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\banners\models\Banners */
+/* @var $model rocketfirm\engine\modules\banners\models\Banners */
 
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('banners', 'Banners'), 'url' => ['index']];

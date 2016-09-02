@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\modules\banners\models\BanersSearch */
+/* @var $searchModel rocketfirm\engine\modules\banners\models\BanersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('banners', 'Баннеры');
@@ -31,10 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     'start_date',
                     'end_date',
                     [
-                        'class' => \app\components\admin\RFAToggleColumn::className(),
+                        'class' => \rocketfirm\engine\admin\RFAToggleColumn::className(),
                         'attribute' => 'is_active',
                     ],
-                    ['class' => 'app\components\admin\RFAActionColumn'],
+                    ['class' => 'rocketfirm\engine\admin\RFAActionColumn'],
                 ],
             ]); ?>
         </div>

@@ -1,14 +1,14 @@
 <?php
 
-namespace app\modules\menu\models;
+namespace rocketfirm\engine\modules\menu\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\modules\menu\models\MenuItems;
+use rocketfirm\engine\modules\menu\models\MenuItems;
 
 /**
- * MenuItemsSearch represents the model behind the search form about `app\modules\menu\models\MenuItems`.
+ * MenuItemsSearch represents the model behind the search form about `rocketfirm\engine\modules\menu\models\MenuItems`.
  */
 class MenuItemsSearch extends MenuItems
 {

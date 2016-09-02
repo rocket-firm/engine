@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\banners\models\Banners */
+/* @var $model rocketfirm\engine\modules\banners\models\Banners */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
         <div class="widget-content padding">
             <?= $form->field($model, 'title')->textInput(['maxlength' => 255]) ?>
 
-            <?= $form->field($model, 'type')->dropDownList(\app\modules\banners\models\Banners::$types,
+            <?= $form->field($model, 'type')->dropDownList(\rocketfirm\engine\modules\banners\models\Banners::$types,
                 ['prompt' => 'Выберите размер банера']) ?>
 
             <?= $form->field($model, 'is_active')->checkbox() ?>
@@ -84,7 +84,7 @@ use yii\widgets\ActiveForm;
 
             <?= $form->field($model, 'bg_color')->widget(\dosamigos\formhelpers\ColorPicker::className(), []) ?>
 
-            <?= $form->field($model, 'positions')->checkboxList(\app\modules\banners\models\Banners::$pageTypes); ?>
+            <?= $form->field($model, 'positions')->checkboxList(\rocketfirm\engine\modules\banners\models\Banners::$pageTypes); ?>
         </div>
     </div>
     <div class="widget">

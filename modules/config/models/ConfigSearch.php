@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use rocketfirm\engine\modules\config\models\Config;
 
 /**
- * ConfigSearch represents the model behind the search form about `app\modules\config\models\Config`.
+ * ConfigSearch represents the model behind the search form about `rocketfirm\engine\modules\config\models\Config`.
  */
 class ConfigSearch extends Config
 {

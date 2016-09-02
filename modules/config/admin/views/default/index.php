@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\modules\config\models\ConfigSearch */
+/* @var $searchModel rocketfirm\engine\modules\config\models\ConfigSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Настройки системы';
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'title',
                         'param',
                         'value',
-                        ['class' => 'app\components\admin\RFAActionColumn'],
+                        ['class' => 'rocketfirm\engine\admin\RFAActionColumn'],
                     ],
                 ]); ?>
             </div>

@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use rocketfirm\engine\modules\languages\models\Languages;
 
 /**
- * LanguageSearch represents the model behind the search form about `app\modules\languages\models\Languages`.
+ * LanguageSearch represents the model behind the search form about `rocketfirm\engine\modules\languages\models\Languages`.
  */
 class LanguageSearch extends Languages
 {

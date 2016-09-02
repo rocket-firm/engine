@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\menu\models\Menus */
+/* @var $model rocketfirm\engine\modules\menu\models\Menus */
 
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('menu', 'Меню'), 'url' => ['index']];

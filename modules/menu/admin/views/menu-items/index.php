@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\modules\menu\models\MenuItemsSearch */
+/* @var $searchModel rocketfirm\engine\modules\menu\models\MenuItemsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('menu', 'Пункты меню');
@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         }
                     ],
                     [
-                        'class' => 'app\components\grid\TreeColumn',
+                        'class' => 'rocketfirm\engine\grid\TreeColumn',
                         'attribute' => 'title'
                     ],
                     [
@@ -67,10 +67,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         'options' => array('align' => 'center')
                     ],
                     [
-                        'class' => \app\components\admin\RFAToggleColumn::className(),
+                        'class' => \rocketfirm\engine\admin\RFAToggleColumn::className(),
                         'attribute' => 'is_active',
                     ],
-                    ['class' => \app\components\admin\RFAActionColumn::className()],
+                    ['class' => \rocketfirm\engine\admin\RFAActionColumn::className()],
                 ],
             ]); ?>
         </div>

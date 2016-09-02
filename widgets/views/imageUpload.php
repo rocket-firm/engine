@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $this \app\components\widgets\ImageUpload
+ * @var $this \rocketfirm\engine\widgets\ImageUpload
  * @var $form \yii\widgets\ActiveForm
  * @var $model \yii\db\ActiveRecord
  * @var $attribute string

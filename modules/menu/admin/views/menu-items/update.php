@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\menu\models\MenuItems */
+/* @var $model rocketfirm\engine\modules\menu\models\MenuItems */
 
 $this->title = Yii::t('menu', 'Изменение пункта меню') . ' ' . $model->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('menu', 'Меню'), 'url' => ['/menu']];

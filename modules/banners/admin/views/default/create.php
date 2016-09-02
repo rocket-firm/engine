@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\banners\models\Banners */
+/* @var $model rocketfirm\engine\modules\banners\models\Banners */
 
 $this->title = Yii::t('banners', 'Создание баннера');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('banners', 'Баннеры'), 'url' => ['index']];

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\modules\menu\models\MenusSearch */
+/* @var $searchModel rocketfirm\engine\modules\menu\models\MenusSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('menu', 'Меню');
@@ -35,10 +35,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         'id',
                         'title',
                         /*[
-                            'class' => \app\components\admin\RFAToggleColumn::className(),
+                            'class' => \rocketfirm\engine\admin\RFAToggleColumn::className(),
                             'attribute' => 'is_active',
                         ],*/
-                        ['class' => \app\components\admin\RFAActionColumn::className()],
+                        ['class' => \rocketfirm\engine\admin\RFAActionColumn::className()],
                     ],
                 ]); ?>
             </div>

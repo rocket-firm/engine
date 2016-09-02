@@ -2,12 +2,12 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use app\modules\languages\models\Languages;
-use app\modules\menu\models\Menus;
-use app\modules\menu\models\MenuItems;
+use rocketfirm\engine\modules\languages\models\Languages;
+use rocketfirm\engine\modules\menu\models\Menus;
+use rocketfirm\engine\modules\menu\models\MenuItems;
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\menu\models\MenuItems */
+/* @var $model rocketfirm\engine\modules\menu\models\MenuItems */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

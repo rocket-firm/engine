@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\modules\languages\models\LanguageSearch */
+/* @var $searchModel rocketfirm\engine\modules\languages\models\LanguageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('languages', 'Языки');
@@ -33,10 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         'code',
                         'locale',
                         [
-                            'class' => \app\components\admin\RFAToggleColumn::className(),
+                            'class' => \rocketfirm\engine\admin\RFAToggleColumn::className(),
                             'attribute' => 'is_active',
                         ],
-                        ['class' => \app\components\admin\RFAActionColumn::className()],
+                        ['class' => \rocketfirm\engine\admin\RFAActionColumn::className()],
                     ],
                 ]); ?>
             </div>

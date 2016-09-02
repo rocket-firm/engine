@@ -14,7 +14,7 @@ use yii\base\Component;
 
 /**
  * Class sendMail
- * @package app\components\traits
+ * @package rocketfirm\engine\traits
  */
 trait RFSendMail
 {

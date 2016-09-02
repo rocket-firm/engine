@@ -40,13 +40,13 @@ class AddMenuItemColumn extends DataColumn
      * Menu model. Full path with namespace
      * @var string
      */
-    public $menuModel = '\app\modules\menu\models\Menus';
+    public $menuModel = '\rocketfirm\engine\modules\menu\models\Menus';
 
     /**
      * Menu Items model. Full path with namespace
      * @var string
      */
-    public $menuItemsModel = '\app\modules\menu\models\MenuItems';
+    public $menuItemsModel = '\rocketfirm\engine\modules\menu\models\MenuItems';
 
     /**
      * Language attribute name

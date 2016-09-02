@@ -1,7 +1,7 @@
 <?php
 /**
  * @var $form \yii\bootstrap\ActiveForm
- * @var $model \app\components\behaviors\WithMetaTags|\app\components\traits\UploadableAsync|\yii\db\ActiveRecord
+ * @var $model \rocketfirm\engine\behaviors\WithMetaTags|\rocketfirm\engine\traits\UploadableAsync|\yii\db\ActiveRecord
  * @var $this \yii\web\View
  * @var $id string
  * @var $hasErrors bool
@@ -18,7 +18,7 @@
         <?= $form->field($model, 'meta_description')->textarea(['rows' => 3]) ?>
         <?= $form->field($model, 'meta_keywords')->textarea(['rows' => 3]) ?>
         <?=
-        \app\components\widgets\ImageUploadAsync::widget([
+        \rocketfirm\engine\widgets\ImageUploadAsync::widget([
             'model' => $model,
             'attribute' => 'metaImageFile',
             'form' => $form,

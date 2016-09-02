@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\modules\languages\models\Languages */
+/* @var $model rocketfirm\engine\modules\languages\models\Languages */
 
 $this->title = Yii::t('languages', 'Создание языка', [
     'modelClass' => 'Языки',

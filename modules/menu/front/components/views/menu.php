@@ -1,6 +1,6 @@
 <?php
 /**
- * @var app\modules\menu\models\Menus $menu
+ * @var rocketfirm\engine\modules\menu\models\Menus $menu
  */
 
 echo \yii\widgets\Menu::widget([

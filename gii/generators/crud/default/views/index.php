@@ -64,9 +64,9 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 <?php
     $columns= \yii\helpers\ArrayHelper::map($tableSchema->columns, 'name', 'name');
     if (in_array('is_active', $columns)) {?>
-                ['class' => 'app\components\admin\RFAToggleColumn'],
+                ['class' => 'rocketfirm\engine\admin\RFAToggleColumn'],
     <?php } ?>
-            ['class' => 'app\components\admin\RFAActionColumn'],
+            ['class' => 'rocketfirm\engine\admin\RFAActionColumn'],
         ],
     ]); ?>
 <?php else: ?>

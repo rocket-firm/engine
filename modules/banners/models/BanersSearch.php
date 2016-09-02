@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 use rocketfirm\engine\modules\banners\models\Banners;
 
 /**
- * BanersSearch represents the model behind the search form about `app\modules\banners\models\Banners`.
+ * BanersSearch represents the model behind the search form about `rocketfirm\engine\modules\banners\models\Banners`.
  */
 class BanersSearch extends Banners
 {
