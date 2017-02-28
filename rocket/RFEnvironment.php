@@ -3,7 +3,15 @@ namespace rocketfirm\engine\rocket;
 
 class RFEnvironment extends \janisto\environment\Environment
 {
-    public $mainConfigName;
+    /**
+     * @var array Сшитая конфигурация приложения
+     */
+    private $configMerged = [];
+
+    /**
+     * @var string
+     */
+    public $defaultEndpoint = 'front';
 
     /**
      * Load and merge configuration files into one array.
@@ -13,58 +21,60 @@ class RFEnvironment extends \janisto\environment\Environment
      */
     protected function getConfig()
     {
-        $configMerged = [];
         foreach ($this->configDir as $configDir) {
             // Merge main config.
-            $fileMainConfig = $configDir . 'main.php';
-            if (!file_exists($fileMainConfig)) {
-                throw new \Exception('Cannot find main config file "' . $fileMainConfig . '".');
-            }
-            $configMain = require($fileMainConfig);
-            if (is_array($configMain)) {
-                $configMerged = self::merge($configMerged, $configMain);
-            }
+            $this->pushConfig($this->getConfigFile($configDir . 'main.php'));
 
             // Merge mode specific config.
-            $fileSpecificConfig = $configDir . 'mode_' . $this->mode . '.php';
-            if (!file_exists($fileSpecificConfig)) {
-                throw new \Exception('Cannot find mode specific config file "' . $fileSpecificConfig . '".');
-            }
-            $configSpecific = require($fileSpecificConfig);
-            if (is_array($configSpecific)) {
-                $configMerged = self::merge($configMerged, $configSpecific);
+            $this->pushConfig($this->getConfigFile($configDir . 'mode_' . $this->mode . '.php'));
+
+            // Получаем конфигурацию для конкретного входного файла, который задает переменную окружения YII_END
+            $yiiEnd = $this->defaultEndpoint;
+            if (!empty(getenv('YII_END'))) {
+                $yiiEnd = getenv('YII_END');
             }
 
-            if (getenv('YII_END') == 'admin') {
-                // If one exists, merge local config.
-                $fileLocalConfig = $configDir . 'admin.php';
-                if (file_exists($fileLocalConfig)) {
-                    $configLocal = require($fileLocalConfig);
-                    if (is_array($configLocal)) {
-                        $configMerged = self::merge($configMerged, $configLocal);
-                    }
-                }
-            } else {
-                // If one exists, merge local config.
-                $fileLocalConfig = $configDir . 'front.php';
-                if (file_exists($fileLocalConfig)) {
-                    $configLocal = require($fileLocalConfig);
-                    if (is_array($configLocal)) {
-                        $configMerged = self::merge($configMerged, $configLocal);
-                    }
-                }
-            }
+            $this->pushConfig($this->getConfigFile($configDir . $yiiEnd . '.php'));
 
             // If one exists, merge local config.
-            $fileLocalConfig = $configDir . 'local.php';
-            if (file_exists($fileLocalConfig)) {
-                $configLocal = require($fileLocalConfig);
-                if (is_array($configLocal)) {
-                    $configMerged = self::merge($configMerged, $configLocal);
-                }
-            }
+            $this->pushConfig($this->getConfigFile($configDir . 'local.php', false));
         }
-        return $configMerged;
+        return $this->configMerged;
+    }
+
+    /**
+     * Возвращает массив настроек
+     *
+     * @param string $filePath Путь до конфигурационного файла
+     * @param bool $strict Выдавать исключения для заданного файла при ошибке чтения или парсинга
+     * @return array
+     * @throws \Exception
+     */
+    private function getConfigFile($filePath, $strict = true)
+    {
+        if (file_exists($filePath)) {
+            $configArray = require($filePath);
+
+            if (is_array($configArray)) {
+                return $configArray;
+            } elseif (!$strict) {
+                return [];
+            }
+
+            throw new \Exception('Конфигурационный файл ' . $filePath . ' не возвращает массив');
+        } elseif(!$strict) {
+            return [];
+        }
+
+        throw new \Exception('Конфигурационный файл ' . $filePath . ' не найден');
+    }
+
+    /**
+     * @param array $configArray
+     */
+    private function pushConfig($configArray)
+    {
+        $this->configMerged = self::merge($this->configMerged, $configArray);
     }
 
     /**
