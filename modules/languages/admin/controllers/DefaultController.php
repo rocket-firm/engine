@@ -5,7 +5,7 @@ namespace rocketfirm\engine\modules\languages\admin\controllers;
 use Yii;
 use rocketfirm\engine\modules\languages\models\Languages;
 use rocketfirm\engine\modules\languages\models\LanguageSearch;
-use rocketfirm\engine\components\RFAController;
+use rocketfirm\engine\RFAController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
