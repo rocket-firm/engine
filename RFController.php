@@ -9,9 +9,9 @@
 namespace rocketfirm\engine;
 
 use rocketfirm\engine\assets\AppAsset;
-use rocketfirm\engine\rocket\RFSendMail;
 use rocketfirm\engine\modules\banners\models\Banners;
 use rocketfirm\engine\modules\config\models\Config;
+use rocketfirm\engine\rocket\RFSendMail;
 use yii\base\View;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
@@ -30,6 +30,7 @@ class RFController extends Controller
 
     public $routeUrl;
 
+    public $activeCssClass;
     /**
      * @var array
      */
