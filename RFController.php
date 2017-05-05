@@ -65,7 +65,7 @@ class RFController extends Controller
             return;
         }
 
-        $this->getView()->title = $title . ' - ' . Config::getParamValue('sitename');
+        $this->getView()->title = $title . ' &mdash; ' . Config::getParamValue('sitename');
 
         if ($image && mb_strpos($image, '//') === false) {
             $image = Url::host() . $url;
