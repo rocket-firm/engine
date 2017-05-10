@@ -113,4 +113,37 @@ class RFEnvironment extends \janisto\environment\Environment
 
         return $res;
     }
+
+    /**
+     * Defines Yii constants, includes base Yii class, sets aliases and merges class map.
+     */
+    public function setup()
+    {
+        /**
+         * This constant defines whether the application should be in debug mode or not.
+         */
+        defined('YII_DEBUG') or define('YII_DEBUG', $this->yiiDebug);
+        /**
+         * This constant defines in which environment the application is running.
+         * The value could be 'prod' (production), 'stage' (staging), 'test' (testing) or 'dev' (development).
+         */
+        defined('YII_ENV') or define('YII_ENV', $this->yiiEnv);
+        /**
+         * Whether the the application is running in staging environment.
+         */
+        defined('YII_ENV_STAGE') or define('YII_ENV_STAGE', YII_ENV === 'stage');
+
+        // Include Yii.
+        require_once($this->yiiPath);
+
+        // Set aliases.
+        foreach ($this->aliases as $alias => $path) {
+            \Yii::setAlias($alias, $path);
+        }
+
+        // Merge class map.
+        if (!empty($this->classMap)) {
+            \Yii::$classMap = static::merge(\Yii::$classMap, $this->classMap);
+        }
+    }
 }
