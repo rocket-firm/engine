@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "yiisoft/yii2": "^2.0",
-        "yiisoft/yii2-imagine": "~2.0.0",
+        "yiisoft/yii2-imagine": "~2.1.1",
         "janisto/yii2-environment": "*",
         "2amigos/yii2-grid-view-library" : "*",
         "2amigos/yii2-date-time-picker-widget" : "~1.0",
